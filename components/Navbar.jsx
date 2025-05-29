@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useClerk, UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
+  // get data From context api 
   const { isSeller, router, user } = useAppContext();
   const { openSignIn } = useClerk();
 
